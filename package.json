@@ -1,0 +1,21 @@
+{
+  "name": "bandcamp-unzip",
+  "version": "1.0.0",
+  "description": "A script to recursively find and unzip bandcamp downloads",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": 12,
+    "npm": 6
+  },
+  "keywords": ["bandcamp", "unzip"],
+  "author": "Simon Dobie<simondobie23@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-stream-zip": "^1.11.1",
+    "yargs": "^15.3.1"
+  }
+}
