@@ -171,7 +171,7 @@ const processFolder = async () => {
         zip.close()
         if (cleanup) {
           verbose && console.log(`Removing ${filename}`)
-          _fs.unlinkSync(filename).catch(e => {
+          fs.unlink(filename).catch(e => {
             console.log(`could not remove ${filename}`)
             verbose && console.log(e)
           })
